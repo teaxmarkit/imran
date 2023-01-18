@@ -5,7 +5,17 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        inter:['Inter','serif']
+        inter:['Inter','serif'],
+        poppinsMedium:['Poppins-Medium','serif'],
+        poppinsLight:['Poppins-Light','serif'],
+      },
+      color:{
+        customPrimary10:"#21005D",
+        customPrimary20:"#381E72",
+        customPrimary60:"#9A82DB",
+        customSecondary10:"#1D192B",
+        customSecondary20:"#332D41",
+        customSecondary60:"#958DA5",
       }
     },
   },

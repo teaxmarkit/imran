@@ -1,8 +1,13 @@
-import { useEffect, useState,useReducer } from 'react'
+import { useEffect, useState,useReducer,useMemo } from 'react'
 import './App.css'
 import {Theme,Action} from "./App.d";
-import { Typography,Button,Stack } from '@mui/material';
-import NavMenuBar from './components/NavMenuBar/NavMenuBar';
+import { createTheme,ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import Header from './components/Header/Header';
+import MemberComponent from './components/MemberComponent/MemberComponent';
+// import { MemberProps } from './components/MemberComponent/MemberComponent';
+import Banner from './components/Banner/Banner';
 
 
 const initialState = {themeMode:'light'} satisfies Theme;
@@ -19,38 +24,37 @@ const reducer = (state:Theme = initialState,action:Action)=>{
 }
 
 
-function App() {
-  const [state,dispatch] = useReducer(reducer,initialState)
 
-  useEffect(()=>{
-        if(state?.themeMode === "dark"){
-          window.document.documentElement.classList.add('dark')
-        }
-        else{
-          window.document.documentElement.classList.add('light')
-        }
-  },[state?.themeMode])
+function App() {
+  const [state,dispatch] = useReducer(reducer,initialState);
+  const [members,setMember] = useState<any[]>([1,2,3,4])
+  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+  const theme = useMemo(
+    () =>
+      createTheme({
+        palette: {
+          mode: prefersDarkMode || state.themeMode === 'dark' ? 'dark' : 'light',
+        },
+      }),
+    [prefersDarkMode,state?.themeMode],
+  );
+
 
   return (
-    <div className='dark bg-grey-200 font-inter pt-5'>
-      <NavMenuBar/>
-      <Button variant='outlined' color='primary' size= 'small' className='px-2 mx-6'>Change Theme</Button>
-      <button onClick={()=> dispatch({type:"THEME",payload:"dark"})} className='bg-blue-300'>Change Theme</button>
-      <p className="font-inter text-3xl text-blue-400 lg:text-blue-800">
-         Welcome to react
-      </p>
-      <Stack direction ='row'  gap={3}>
-        <Typography variant='body1' className ='bg-blue-300'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, vero incidunt ducimus facere placeat voluptatum nesciunt sit eos quisquam nobis, error, adipisci repellendus. Veritatis harum quidem, ipsa placeat nemo atque?
-        </Typography>
-        <Typography variant='body1' className ='bg-blue-300'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, vero incidunt ducimus facere placeat voluptatum nesciunt sit eos quisquam nobis, error, adipisci repellendus. Veritatis harum quidem, ipsa placeat nemo atque?
-        </Typography>
-      </Stack>
-      <Typography variant='body1'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, vero incidunt ducimus facere placeat voluptatum nesciunt sit eos quisquam nobis, error, adipisci repellendus. Veritatis harum quidem, ipsa placeat nemo atque?
-      </Typography>
-    </div>
+    <ThemeProvider theme={theme}>
+        <CssBaseline/>
+        <Header></Header>
+        <Banner/>
+        <div className='pt-5 px-2 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4'>
+          {members?.map(member =>{
+            return( <MemberComponent key={member}></MemberComponent> )
+          })
+            }
+         
+        </div>
+    </ThemeProvider>
+
+    
   )
 }
 

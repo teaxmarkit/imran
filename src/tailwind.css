@@ -5,3 +5,16 @@
     font-family: Inter;
     src: url(./Inter/Inter-VariableFont_slnt,wght.ttf);
  }
+
+@font-face {
+   font-family: Poppins-Medium;
+   src: url(./Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+   font-family: Poppins-Light;
+   src: url(./Poppins/Poppins-Light.ttf);
+}
+
+
+

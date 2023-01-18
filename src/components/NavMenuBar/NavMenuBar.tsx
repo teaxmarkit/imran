@@ -9,24 +9,25 @@ function NavMenuBar() {
     setOpen(!open)
  }
   return (
-    <div className={open?'bars-wrapper open':'bars-wrapper'} onClick = {handleOpen}>
+    <>
+     <div className={open?'bars-wrapper open':'bars-wrapper'} onClick = {handleOpen}>
         <span className='bar1'>
         </span>
         <span className ='bar2'>
         </span>
         <span className='bar3'>
         </span>
-        {
+    </div>
+    {
             open && 
-            <div className='menu-bar'>
+            <div className='menu-bar shadow-md rounded'>
                 <span>One</span>
                 <span>Two</span>
                 <span>Three</span>
             </div>
         }
-       
-    
-    </div>
+    </>
+   
   )
 }
 

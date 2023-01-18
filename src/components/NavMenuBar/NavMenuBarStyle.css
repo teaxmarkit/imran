@@ -31,7 +31,7 @@
     position: absolute;
     width: 24px;
     height: 2px;
-    background: black;
+    background: white;
     top:0;
     left:0;
     transition: all 0.5s;
@@ -63,18 +63,17 @@
 }
 
 .menu-bar{
-    position: relative;
+    position: fixed;
     display: flex;
     flex-direction: column;
     gap:3px;
     align-items: center;
-    z-index: 1;
-    top: 100%;
-    margin:auto;
-    width: 90vw;
-    border:2px solid grey;
+    z-index: 100;
+    top: 8%;
+    left:5%;
+    right:5%;
     transition: all 0.5s;
-    background-color: #185777;
+    background-color: white;
 }
 
 .menu-bar>*{
