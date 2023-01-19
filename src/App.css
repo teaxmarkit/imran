@@ -2,10 +2,13 @@
 *{
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body{
   background-color: #100b1f;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 

@@ -16,10 +16,10 @@ function Header() {
             {
                 !lessThanTab && 
                 <Tabs className='md:hidden' sx={{marginRight:65}} textColor='inherit' value={activeTab} onChange ={(e,value) => setActiveTab(value)} indicatorColor ='secondary'>
-                    <Tab label='Home'></Tab>
-                    <Tab label='About Us'></Tab>
-                    <Tab label='Services'></Tab>
-                    <Tab label='Contact Us'></Tab>
+                    <Tab href='#' label='Home'></Tab>
+                    <Tab href='#about-us' label='About Us'></Tab>
+                    <Tab href='#services' label='Services'></Tab>
+                    <Tab href='#contact-us' label='Contact Us'></Tab>
                 </Tabs>
             }
             {

@@ -9,7 +9,7 @@ module.exports = {
         poppinsMedium:['Poppins-Medium','serif'],
         poppinsLight:['Poppins-Light','serif'],
       },
-      color:{
+      colors:{
         customPrimary10:"#21005D",
         customPrimary20:"#381E72",
         customPrimary60:"#9A82DB",
