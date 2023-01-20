@@ -9,7 +9,8 @@ import MemberComponent from './components/MemberComponent/MemberComponent';
 // import { MemberProps } from './components/MemberComponent/MemberComponent';
 import Banner from './components/Banner/Banner';
 import {Typography} from "@mui/material"
-import ContactUs from './components/ContactUs/ContactUs';
+// import ContactUs from './components/ContactUs/ContactUs';
+import Footer from './components/Footer/Footer';
 
 
 const initialState = {themeMode:'light'} satisfies Theme;
@@ -61,11 +62,14 @@ function App() {
             })
               }
           </div>
-          <section id='contact-us' className='m-2'>
+          {/* <section id='contact-us' className='m-2'>
              <ContactUs/>
-          </section>
+          </section> */}
           
         </main>
+        <footer>
+          <Footer/>
+        </footer>
       
     </ThemeProvider>
 
