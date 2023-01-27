@@ -8,9 +8,10 @@ import Header from './components/Header/Header';
 import MemberComponent from './components/MemberComponent/MemberComponent';
 // import { MemberProps } from './components/MemberComponent/MemberComponent';
 import Banner from './components/Banner/Banner';
-import {Typography} from "@mui/material"
-// import ContactUs from './components/ContactUs/ContactUs';
+import {Typography,Divider} from "@mui/material"
+import ContactUs from './components/ContactUs/ContactUs';
 import Footer from './components/Footer/Footer';
+import AboutUs from './components/AboutUs/AboutUs';
 
 
 const initialState = {themeMode:'light'} satisfies Theme;
@@ -47,24 +48,32 @@ function App() {
         <CssBaseline/>
         <Header></Header>
         <Banner/>
-        <main className='py-10 px-2'>
+        <main className='py-10 px-4 mx-10'>
+
+          <section id='about-us' className='m-2'>
+             <AboutUs/>
+          </section>
+      
           <section id='services' className='m-2'>
-            <Typography variant='h4'>Services section</Typography>
+          <Typography variant='h4' className='text-center mb-10 text-customPrimary10 font-semi-bold'>Services</Typography>
+          <Divider></Divider>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nisi ex magnam, doloremque veniam ullam, natus sit quia necessitatibus non provident labore sint. Voluptatem suscipit nesciunt quaerat voluptate consectetur autem?</p>
           </section>
-          <section id='about-us' className='m-2'>
-            <Typography variant='h4'>About us</Typography>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus libero animi nihil ab, voluptatem nemo non maiores! Corrupti earum et facilis, aspernatur voluptatibus, eius odio ipsam id voluptatem debitis eos.</p>
+
+          <section className='m-2'>
+          <Typography variant='h4' className='text-center mb-10 text-customPrimary10 font-semi-bold'>Meet The Team</Typography>
+          <Divider></Divider>
+            <div className='pt-5 px-2 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4'>
+              {members?.map(member =>{
+                return( <MemberComponent key={member}></MemberComponent> )
+              })
+                }
+            </div>
           </section>
-          <div className='pt-5 px-2 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4'>
-            {members?.map(member =>{
-              return( <MemberComponent key={member}></MemberComponent> )
-            })
-              }
-          </div>
-          {/* <section id='contact-us' className='m-2'>
+         
+          <section id='contact-us' className='m-2'>
              <ContactUs/>
-          </section> */}
+          </section>
           
         </main>
         <footer>
