@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css';
 import { AppBar,Toolbar,Tabs,Tab, Typography,useMediaQuery,useTheme } from '@mui/material';
 import NavMenuBar from '../NavMenuBar/NavMenuBar';
-import SVGLogo from '../SVGLogo/Svglogo';
+
 
 
 function Header() {
