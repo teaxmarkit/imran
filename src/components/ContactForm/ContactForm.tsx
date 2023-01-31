@@ -58,7 +58,7 @@ function ContactForm() {
                    <MailOutline className='text-customPrimary20' fontSize='large'></MailOutline>
                    <div>
                         <Typography>Email</Typography>
-                        <Typography className='text-md text-gray-500'>email@gmail.com</Typography>
+                        <Typography  className='text-md text-gray-500'>email@gmail.com</Typography>
                    </div>
                </div>
                <div className='flex flex-row items-center justify-start gap-3 my-2'>
@@ -80,7 +80,7 @@ function ContactForm() {
                 </div>
                 <TextField onChange={(e)=> dispatch({type:'SUBJECT',payload:e.target.value})} size='small'  fullWidth variant='outlined' label='Subject' required></TextField>
                 <TextField onChange={(e)=> dispatch({type:'MESSAGE',payload:e.target.value})} size='small' multiline minRows={3} fullWidth variant='outlined' label='Message' required></TextField>
-                <button className='bg-customPrimary20 px-3 py-1 text-gray-300 rounded'>Submit</button>
+                <button className='bg-customPrimary20 px-3 py-2 text-white rounded md:px-5'>Submit</button>
             </form>
         </div>
        

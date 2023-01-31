@@ -12,6 +12,7 @@ import {Typography,Divider} from "@mui/material"
 import ContactUs from './components/ContactUs/ContactUs';
 import Footer from './components/Footer/Footer';
 import AboutUs from './components/AboutUs/AboutUs';
+import Services from './components/ServicesOffered/Services';
 
 
 const initialState = {themeMode:'light'} satisfies Theme;
@@ -26,7 +27,6 @@ const reducer = (state:Theme = initialState,action:Action)=>{
         return state
     }
 }
-
 
 
 function App() {
@@ -48,30 +48,30 @@ function App() {
         <CssBaseline/>
         <Header></Header>
         <Banner/>
-        <main className='py-10 px-4 mx-10'>
+        <main className='py-10 px-1 mx-1 md:px-4 md:mx-10'>
 
           <section id='about-us' className='m-2'>
              <AboutUs/>
           </section>
       
+
           <section id='services' className='m-2'>
-          <Typography variant='h4' className='text-center mb-10 text-customPrimary10 font-semi-bold'>Services</Typography>
+          <h4 className='text-center my-4 text-customPrimary10 text-lx font-semi-bold md:text-3xl'>Our Services</h4>
           <Divider></Divider>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nisi ex magnam, doloremque veniam ullam, natus sit quia necessitatibus non provident labore sint. Voluptatem suscipit nesciunt quaerat voluptate consectetur autem?</p>
+             <Services/>
           </section>
 
+
           <section className='m-2'>
-          <Typography variant='h4' className='text-center mb-10 text-customPrimary10 font-semi-bold'>Meet The Team</Typography>
+          <h4 className='text-center my-4 text-customPrimary10 text-lx font-semi-bold md:text-3xl'>Meet The Team</h4>
           <Divider></Divider>
-            <div className='pt-5 px-2 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4'>
-              {members?.map(member =>{
-                return( <MemberComponent key={member}></MemberComponent> )
-              })
-                }
-            </div>
+            <MemberComponent/>
           </section>
+
          
           <section id='contact-us' className='m-2'>
+          <h4 className='text-center my-4 text-customPrimary10 text-lx font-semi-bold md:text-3xl'>Contact Us</h4>
+          <Divider></Divider>
              <ContactUs/>
           </section>
           

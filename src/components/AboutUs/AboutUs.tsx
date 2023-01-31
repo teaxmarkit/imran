@@ -15,7 +15,7 @@ const[activeTab,setActiveTab] = React.useState<number>(0);
     <div className='flex w-100 flex-col mt-2 gap-5 justify-center md:flex-row'>
         <img alt='About Us Image' className='w-100 rounded' src='../../src/assets/constellation-bg.svg'/>
         <div>
-            <Typography variant='h4' className='text-center mb-10 text-customPrimary10 font-semi-bold'>
+            <Typography variant='h4' className='text-center text-lg mb-10 text-customPrimary10 font-semi-bold'>
                 SchoolAll Tech Compnay. Here to digitize all your education needs
             </Typography>
             <Tabs className='md:hidden' textColor='inherit' value={activeTab} onChange ={(e,value) => setActiveTab(value)} indicatorColor ='secondary'>

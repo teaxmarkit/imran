@@ -4,46 +4,64 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import {IconButton } from '@mui/material';
-import {FacebookOutlined,Twitter,Instagram,LinkedIn,GitHub} from "@mui/icons-material"
+import {FacebookOutlined,Twitter,Instagram,LinkedIn,GitHub} from "@mui/icons-material";
+import MemberProps from './MemberComponent.d';
 
 
-
-
-function MemberComponent () {
+function MemberComponent ({position,content,media,imageUrl}:MemberProps) {
   return (
-    <div style={{ width:'auto',border:'none'}} className='shadow-md'>
+    <div  className='shadow-md rounded-md'>
    
       <CardMedia
         component="img"
-        height="90"
-        image="../../src/assets/constellation-bg.svg"
+        height="50"
+        image={imageUrl}
+        // image="../../src/assets/constellation-bg.svg"
         alt="Image of the member"
       />
       <CardContent>
-        <Typography className='font-inter font-bold' gutterBottom variant="h5" component="div">
-          Chief Executive Officer
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-        <div className='flex flex-row justify-center items-center py-3'>
-          <IconButton aria-label="delete">
+      <div className='flex flex-row justify-center items-center pb-3'>
+          {
+            media.facebook && 
+            <IconButton aria-label="delete">
             <FacebookOutlined  />
           </IconButton>
-          <IconButton aria-label="delete">
-            <Twitter />
-          </IconButton>
-          <IconButton aria-label="delete">
-            <Instagram />
-          </IconButton>
-          <IconButton size='medium' aria-label="delete">
-            <GitHub />
-          </IconButton>
-          <IconButton aria-label="delete">
-            <LinkedIn />
-          </IconButton>
+          }
+          {
+            media.twitter && 
+            <IconButton aria-label="delete">
+              <Twitter />
+            </IconButton>
+          }
+          {
+            media.instagram && 
+            <IconButton aria-label="delete">
+              <Instagram />
+            </IconButton>
+          }
+          {
+            media.github && 
+            <IconButton size='medium' aria-label="delete">
+              <GitHub />
+            </IconButton>
+          }
+
+          {
+            media.linkedin && 
+            <IconButton aria-label="delete">
+              <LinkedIn />
+            </IconButton>
+          }
+         
         </div>
+        <Typography className='font-inter font-bold text-center' gutterBottom variant="h5" component="div">
+          {position}
+        </Typography>
+        
+        <p className='font-poppinsLight text-center text-md md:text-2md'>
+            {content}
+        </p>
+     
       </CardContent>
 
   </div>
@@ -51,4 +69,28 @@ function MemberComponent () {
   )
 }
 
-export default MemberComponent
+
+function MembersComponent() {
+  const MEMBERS:MemberProps[] = [
+    {id:1,imageUrl:'../../src/assets/constellation-bg.svg',position:"Chief Executive Officer",content:"Co-founder and CEO of SchoolAll",media:{facebook:"F",twitter:"T",instagram:"I",linkedin:"",github:""}},
+    {id:2,imageUrl:'../../src/assets/constellation-bg.svg',position:"Chief Technical Officer",content:"Co-founder and CTO of SchoolAll",media:{facebook:"F",twitter:"",instagram:"I",linkedin:"L",github:"G"}},
+    {id:3,imageUrl:'../../src/assets/constellation-bg.svg',position:"Chief Operating Officer",content:"Co-founder and COO of SchoolAll",media:{facebook:"F",twitter:"",instagram:"I",linkedin:"",github:""}},
+    {id:4,imageUrl:'../../src/assets/constellation-bg.svg',position:"Chief Human Resource Officer",content:"Co-founder and CHRO of SchoolAll",media:{facebook:"F",twitter:"",instagram:"I",linkedin:"",github:"G"}}
+  ]
+
+  return (
+    <div className='pt-5 px-2 grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4'>
+      {
+        MEMBERS.map((item:MemberProps,index:number)=>{
+          return(
+            <MemberComponent key={item.id} {...item}/>
+          )
+        })
+      }
+
+    </div>
+  )
+}
+
+export default MembersComponent
+

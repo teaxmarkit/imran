@@ -9,7 +9,8 @@ export type MediaObject = {
     instagram?:string
 }
 
-export type MemberProps = {
+export default interface MemberProps {
+    id:number,
     imageUrl:string,
     position:string,
     media:MediaObject,
