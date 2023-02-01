@@ -1,6 +1,8 @@
-import { Typography,Tabs,Tab,Box, Divider} from '@mui/material';
-import React from 'react';
+import { Divider, Tab, Tabs } from '@mui/material';
+// import AOS from 'aos';
+import React, { useEffect } from 'react';
 import './AboutUs.css';
+// import "aos/dist/aos.css";
 
 
 
@@ -8,16 +10,19 @@ import './AboutUs.css';
 function AboutUs() {
 const[activeTab,setActiveTab] = React.useState<number>(0);
 
+// useEffect(()=>{
+//     AOS.init({duration:1000})
+// },[])
+
+
   return (
-    <div className='my-2 mb-4 pb-3'>
-   <Typography variant='h4' className='text-center mb-10 text-customPrimary10 font-semi-bold'>About Us</Typography>
+   <div className='my-2 mb-4 pb-3'>
+   <h4 className='text-center mb-5 text-customPrimary10 text-3xl font-semibold font-inter md:text-5xl md:mb-8'>About Us</h4>
    <Divider></Divider>
     <div className='flex w-100 flex-col mt-2 gap-5 justify-center md:flex-row'>
-        <img alt='About Us Image' className='w-100 rounded' src='../../src/assets/constellation-bg.svg'/>
+        <img alt='About Us Image' className='w-100 rounded' src='/constellation-bg.svg'/>
         <div>
-            <Typography variant='h4' className='text-center text-lg mb-10 text-customPrimary10 font-semi-bold'>
-                SchoolAll Tech Compnay. Here to digitize all your education needs
-            </Typography>
+        <h4 className='text-center text-customPrimary10 text-2xl font-inter md:text-4xl'>SchoolAll Company Here To Digitize Education</h4>
             <Tabs className='md:hidden' textColor='inherit' value={activeTab} onChange ={(e,value) => setActiveTab(value)} indicatorColor ='secondary'>
                 <Tab label='Mission'></Tab>
                 <Tab  label='Vission'></Tab>

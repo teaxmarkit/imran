@@ -58,7 +58,7 @@ function MemberComponent ({position,content,media,imageUrl}:MemberProps) {
           {position}
         </Typography>
         
-        <p className='font-poppinsLight text-center text-md md:text-2md'>
+        <p className='font-poppinsLight text-center text-sm md:text-2md'>
             {content}
         </p>
      
@@ -72,10 +72,10 @@ function MemberComponent ({position,content,media,imageUrl}:MemberProps) {
 
 function MembersComponent() {
   const MEMBERS:MemberProps[] = [
-    {id:1,imageUrl:'../../src/assets/constellation-bg.svg',position:"Chief Executive Officer",content:"Co-founder and CEO of SchoolAll",media:{facebook:"F",twitter:"T",instagram:"I",linkedin:"",github:""}},
-    {id:2,imageUrl:'../../src/assets/constellation-bg.svg',position:"Chief Technical Officer",content:"Co-founder and CTO of SchoolAll",media:{facebook:"F",twitter:"",instagram:"I",linkedin:"L",github:"G"}},
-    {id:3,imageUrl:'../../src/assets/constellation-bg.svg',position:"Chief Operating Officer",content:"Co-founder and COO of SchoolAll",media:{facebook:"F",twitter:"",instagram:"I",linkedin:"",github:""}},
-    {id:4,imageUrl:'../../src/assets/constellation-bg.svg',position:"Chief Human Resource Officer",content:"Co-founder and CHRO of SchoolAll",media:{facebook:"F",twitter:"",instagram:"I",linkedin:"",github:"G"}}
+    {id:1,imageUrl:'/constellation-bg.svg',position:"Chief Executive Officer",content:"Co-founder and CEO of SchoolAll",media:{facebook:"F",twitter:"T",instagram:"I",linkedin:"",github:""}},
+    {id:2,imageUrl:'/constellation-bg.svg',position:"Chief Technical Officer",content:"Co-founder and CTO of SchoolAll",media:{facebook:"F",twitter:"",instagram:"I",linkedin:"L",github:"G"}},
+    {id:3,imageUrl:'/constellation-bg.svg',position:"Chief Operating Officer",content:"Co-founder and COO of SchoolAll",media:{facebook:"F",twitter:"",instagram:"I",linkedin:"",github:""}},
+    {id:4,imageUrl:'/constellation-bg.svg',position:"Chief Human Resource Officer",content:"Co-founder and CHRO of SchoolAll",media:{facebook:"F",twitter:"",instagram:"I",linkedin:"",github:"G"}}
   ]
 
   return (
