@@ -21,6 +21,7 @@ function Header() {
                     <Tab href='#' label='Home'></Tab>
                     <Tab href='#about-us' label='About Us'></Tab>
                     <Tab href='#services' label='Services'></Tab>
+                    <Tab href='#team' label='Team Members'></Tab>
                     <Tab href='#contact-us' label='Contact Us'></Tab>
                 </Tabs>
             }

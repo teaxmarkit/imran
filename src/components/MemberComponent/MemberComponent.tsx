@@ -6,11 +6,18 @@ import Typography from '@mui/material/Typography';
 import {IconButton } from '@mui/material';
 import {FacebookOutlined,Twitter,Instagram,LinkedIn,GitHub} from "@mui/icons-material";
 import MemberProps from './MemberComponent.d';
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 
 function MemberComponent ({position,content,media,imageUrl}:MemberProps) {
+
+  React.useEffect(()=>{
+    AOS.init({duration:2000})
+  },[])
+
   return (
-    <div  className='shadow-md rounded-md'>
+    <div data-aos='zoom-in' className='shadow-md rounded-md dark:shadow-lg'>
    
       <CardMedia
         component="img"

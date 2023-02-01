@@ -14,7 +14,7 @@ import Footer from './components/Footer/Footer';
 import AboutUs from './components/AboutUs/AboutUs';
 import Services from './components/ServicesOffered/Services';
 import AOS from 'aos';
-// import "aos/dist/aos.css";
+import "aos/dist/aos.css";
 
 
 
@@ -47,9 +47,9 @@ function App() {
   );
 
   
-// useEffect(()=>{
-//   AOS.init({duration:1000})
-// },[])
+useEffect(()=>{
+  AOS.init({duration:2000})
+},[])
 
 
   return (
@@ -57,29 +57,29 @@ function App() {
         <CssBaseline/>
         <Header></Header>
         <Banner/>
-        <main className='py-10 px-1 mx-1 md:px-3 md:mx-8'>
+        <main className='py-10 px-3 md:px-3 md:mx-8'>
 
-          <section  id='about-us' className='my-2'>
+          <section data-aos='zoom-in' id='about-us' className='my-2'>
              <AboutUs/>
           </section>
       
 
-          <section  id='services' className='my-2'>
-          <h4 className='text-center my-6 text-customPrimary10 text-3xl font-semibold font-inter md:text-5xl'>Our Services</h4>
+          <section data-aos='zoom-in' id='services' className='my-2'>
+          <h4 className='text-center my-6 text-customPrimary10 text-3xl font-semibold font-inter md:text-5xl dark:text-gray-400'>Our Services</h4>
           <Divider></Divider>
              <Services/>
           </section>
 
 
-          <section  className='my-4'>
-          <h4 className='text-center text-customPrimary10 text-3xl font-semibold font-inter mt-10 mb-6 md:text-5xl'>Meet The Team</h4>
+          <section data-aos='zoom-in' id='team' className='my-4'>
+          <h4 className='text-center text-customPrimary10 text-3xl font-semibold font-inter mt-10 mb-6 md:text-5xl dark:text-gray-400'>Meet The Team</h4>
           <Divider></Divider>
             <MemberComponent/>
           </section>
 
          
-          <section  id='contact-us' className='my-2'>
-          <h4 className='text-center text-customPrimary10 text-3xl font-semibold font-inter my-6 md:text-5xl'>Contact Us</h4>
+          <section data-aos='zoom-in' id='contact-us' className='my-2'>
+          <h4 className='text-center text-customPrimary10 text-3xl font-semibold font-inter my-6 md:text-5xl dark:text-gray-400'>Contact Us</h4>
           <Divider></Divider>
              <ContactUs/>
           </section>
