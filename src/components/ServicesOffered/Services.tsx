@@ -5,7 +5,7 @@ import ServiceProps from './Services.d';
 const SerciceComponent = ({title,description}:ServiceProps)=>{
     return(
         <div className='shadow-md p-5 rounded w-min-'>
-            <h4 className='text-center text-customPrimary10 text-2xl font-inter md:text-4xl dark:text-gray-500'>{title}</h4>
+            <h4 className='text-center text-customPrimary10 text-2xl font-inter md:text-4xl dark:text-gray-700'>{title}</h4>
             <p className='font-poppinsLight text-lg my-3 md:text-lg'>
                {description}
             </p>

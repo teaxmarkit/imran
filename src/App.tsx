@@ -65,21 +65,21 @@ useEffect(()=>{
       
 
           <section data-aos='zoom-in' id='services' className='my-2'>
-          <h4 className='text-center my-6 text-customPrimary10 text-3xl font-semibold font-inter md:text-5xl dark:text-gray-400'>Our Services</h4>
+          <h4 className='text-center my-6 text-customPrimary10 text-3xl font-semibold font-inter md:text-5xl opacity-4'>Our Services</h4>
           <Divider></Divider>
              <Services/>
           </section>
 
 
-          <section data-aos='zoom-in' id='team' className='my-4'>
-          <h4 className='text-center text-customPrimary10 text-3xl font-semibold font-inter mt-10 mb-6 md:text-5xl dark:text-gray-400'>Meet The Team</h4>
+          <section data-aos='fade-in' id='team' className='my-4'>
+          <h4 className='text-center text-customPrimary10 text-3xl font-semibold font-inter mt-10 mb-6 md:text-5xl opacity-4'>Meet The Team</h4>
           <Divider></Divider>
             <MemberComponent/>
           </section>
 
          
           <section data-aos='zoom-in' id='contact-us' className='my-2'>
-          <h4 className='text-center text-customPrimary10 text-3xl font-semibold font-inter my-6 md:text-5xl dark:text-gray-400'>Contact Us</h4>
+          <h4 className='text-center text-customPrimary10 text-3xl font-semibold font-inter my-6 md:text-5xl opacity-4'>Contact Us</h4>
           <Divider></Divider>
              <ContactUs/>
           </section>
