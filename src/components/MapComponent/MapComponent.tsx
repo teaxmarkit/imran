@@ -1,12 +1,13 @@
 import React from 'react'
-import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
+import { GoogleMap, useJsApiLoader,Marker } from '@react-google-maps/api';
 
 const containerStyle = {
   width: '100%',
   height: '500px'
 };
 
-const center:{lng:number,lat:number} = {
+
+const _center = {
   lng: -13.22992,
   lat: 8.483802
 };
@@ -22,9 +23,10 @@ export const CustomMapComponent =()=>{
   return isLoaded ? (
       <GoogleMap
         mapContainerStyle={containerStyle}
-        center={center}
+        center={_center}
         zoom={16}
       >
+        <Marker position={_center}></Marker>
         { /* Child components, such as markers, info windows, etc. */ }
         <></>
       </GoogleMap>

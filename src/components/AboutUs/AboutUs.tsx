@@ -1,4 +1,4 @@
-import { Divider, Tab, Tabs } from '@mui/material';
+import { Divider, Tab, Tabs,useTheme,useMediaQuery,Typography } from '@mui/material';
 // import AOS from 'aos';
 import React, { useEffect } from 'react';
 import './AboutUs.css';
@@ -9,6 +9,8 @@ import './AboutUs.css';
 
 function AboutUs() {
 const[activeTab,setActiveTab] = React.useState<number>(0);
+const mytheme = useTheme();
+const lessThanTab = useMediaQuery(mytheme.breakpoints.down("md"));
 
 // useEffect(()=>{
 //     AOS.init({duration:1000})
@@ -16,8 +18,9 @@ const[activeTab,setActiveTab] = React.useState<number>(0);
 
 
   return (
-   <div className='my-2 mb-4 pb-3'>
-   <h4 className='text-center mb-5 text-customPrimary10 text-3xl font-semibold font-inter md:text-5xl md:mb-8 opacity-4'>About Us</h4>
+   <div className='my-2 mb-2 pb-2'>
+     <Typography className='text-center pb-2' fontFamily='Inter' fontWeight='bold' color='primary.main' variant={lessThanTab ?'h4':"h3"}>About Us</Typography>
+   {/* <h4 className='text-center mb-5 text-customPrimary10 text-3xl font-semibold font-inter md:text-5xl md:mb-8 opacity-4'>About Us</h4> */}
    <Divider></Divider>
     <div className='flex w-100 flex-col mt-2 gap-5 justify-center md:flex-row'>
         <img alt='About Us Image' className='rounded' style={{height:"inherit"}} src='/edu4.avif'/>

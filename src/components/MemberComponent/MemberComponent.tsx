@@ -61,7 +61,7 @@ function MemberComponent ({position,content,media,imageUrl}:MemberProps) {
           }
          
         </div>
-        <Typography className='font-inter font-bold text-center' gutterBottom variant="h5" component="div">
+        <Typography fontFamily='Poppins-Medium' className='text-center' gutterBottom variant="h6">
           {position}
         </Typography>
         
