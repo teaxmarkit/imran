@@ -13,7 +13,7 @@ function Header() {
   return (
     <AppBar position='fixed' sx={{background:'#21005D88'}}>
         <Toolbar className='flex flex-row justify-between bg-transparent'>
-            <Typography className='font-bold font-poppinsMedium text text-lg' variant='h5'>LOGO</Typography>
+            <Typography sx={{fontFamily:"Inter",fontWeight:"bold"}} variant='h5'>School<Typography sx={{fontFamily:"Inter",display:"inline",fontWeight:"bold"}} variant='h5' color='secondary'>All</Typography></Typography>
             {/* <SVGLogo/> */}
             {
                 !lessThanTab && 
