@@ -18,8 +18,8 @@ function SappChat() {
       <Modal open={showChatBox} onClose={()=> setShowChatBox(false)}>
       <motion.div className='flex relative flex-col justify-center items-center h-80 bg-white'>
         <span className='absolute top-5 right-10 z-40'><Close color='primary' onClick = {()=> setShowChatBox(false)}/></span>
-        <form onSubmit={handleSappForm} className='gap-2 flex flex-row rounded text-white'>
-            <TextField className='text-white' type="text" value={sappMsg} label='Chat On WhatsApp' multiline size='small' color='success' onChange={e => setSappMsg(e.target.value)} sx={{height:"4vh",marginRight:'3px',color:"white"}}>
+        <form onSubmit={handleSappForm} className='gap-2 px-4 flex flex-row rounded text-white md:px-2'>
+            <TextField  className='text-white' type="text" value={sappMsg} label='Chat On WhatsApp' multiline size='small' color='success' onChange={e => setSappMsg(e.target.value)} sx={{height:"4vh",marginRight:'3px',color:"white"}}>
             </TextField>
             <ReactWhatsapp element='webview' number='+23279027241'  message={sappMsg}> <IconButton ><Send color='success'></Send></IconButton></ReactWhatsapp>
           
@@ -31,7 +31,7 @@ function SappChat() {
        <Tooltip title='Chat'>
         <SpeedDial
           ariaLabel="SpeedDial openIcon example"
-          sx={{ position: 'fixed', top: '70%', right: 50 }}
+          sx={{ position: 'fixed', top: '75%', right: 30 }}
           icon={<SpeedDialIcon openIcon={<Chat/>}/>}
         >
           <SpeedDialAction icon={<WhatsApp/>} onClick={()=> setShowChatBox(true)} tooltipTitle="Chat on WhatsApp"/>

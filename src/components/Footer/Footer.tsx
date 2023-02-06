@@ -6,22 +6,21 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <div className='p-5 shadow-lg bg-customPrimary10 bottom-0 flex items-start flex-col md:flex-row md:justify-around'>
-        <div>
-            <Typography variant='h4' className='text-gray-400 font-semibold font-poppinsMedium'>SchoolAll</Typography>
+    <div className='p-5 shadow-lg bg-customPrimary10 bottom-0 grid grid-cols-2 md:grid-cols-3'>
+        <div className='my-3 flex flex-col items-center justify-start'>
+            <Typography  sx={{fontFamily:"Inter",fontWeight:"bold",color:"white"}} variant='h5'>School<Typography sx={{fontFamily:"Inter",display:"inline",fontWeight:"bold"}} variant='h5' color='secondary'>All</Typography></Typography>
+            {/* <Typography variant='h4' className='text-gray-400 font-semibold font-poppinsMedium'>SchoolAll</Typography> */}
             <p className='text-gray-500'><span>&#169; Copywrite 2023</span></p>
-
         </div>
-        <div className='d-flex flex-col text-gray-300'>
-            <ol>
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Services</li>
-                <li>Contact Us</li>
-            </ol>
+        <div className='flex flex-col items-center justify-start text-gray-300'>
+            <a style={{textDecoration:"none"}} className='hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300' href='/'>Home</a>
+            <a style={{textDecoration:"none"}} className='hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300' href='/#about-us'>About Us</a>
+            <a style={{textDecoration:"none"}} className='hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300' href='/#services'>Our Services</a>
+            <a style={{textDecoration:"none"}} className='hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300' href='/#team'>Team Members</a>
+            <a style={{textDecoration:"none"}} className='hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300' href='/#contact'>Contact Us</a>
         </div>
-        <div className='d-flex flex-col text-gray-400'>
-            <div className='flex flex-row justify-center text-gray-400 items-center py-3'>
+        <div className='d-flex flex-col items-center justify-start my-2 text-gray-400'>
+            <div className='flex flex-row justify-center text-gray-400 items-start py-3'>
                 <IconButton aria-label="delete">
                     <FacebookOutlined className='text-gray-400' />
                 </IconButton>
@@ -39,7 +38,7 @@ function Footer() {
                 </IconButton>
             </div>
             
-          </div>
+        </div>
        
     </div>
   )
