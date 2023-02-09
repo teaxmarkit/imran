@@ -9,3 +9,12 @@ export interface Action{
     type?:string,
     payload?:string,
 }
+
+
+export type EmailVerifyResp = {
+    status?:string,
+    content?:NonNullable<{
+        message_id:NonNullable<string>,
+        verified?:boolean
+    }>
+}

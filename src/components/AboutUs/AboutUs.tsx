@@ -12,6 +12,8 @@ const[activeTab,setActiveTab] = React.useState<number>(0);
 const mytheme = useTheme();
 const lessThanTab = useMediaQuery(mytheme.breakpoints.down("md"));
 
+let aboutImgWidth = lessThanTab?"100vw":"50vw";
+
 // useEffect(()=>{
 //     AOS.init({duration:1000})
 // },[])
@@ -23,7 +25,7 @@ const lessThanTab = useMediaQuery(mytheme.breakpoints.down("md"));
    {/* <h4 className='text-center mb-5 text-customPrimary10 text-3xl font-semibold font-inter md:text-5xl md:mb-8 opacity-4'>About Us</h4> */}
    <Divider></Divider>
     <div className='flex w-100 flex-col mt-2 gap-5 justify-center md:flex-row'>
-        <img alt='About Us Image' className='rounded' style={{height:"inherit"}} src='/edu4.avif'/>
+        <img alt='About Us Image' className='rounded' style={{width:aboutImgWidth,height:"80vh"}} src='/aboutus.jpg'/>
         <div>
         {/* <h4 className='text-center text-customPrimary20 text-2xl font-inter md:text-4xl'>SchoolAll Company Here To Digitize Education</h4> */}
             <Tabs  textColor='inherit' value={activeTab} sx={{justifyContent:"center"}} onChange ={(e,value) => setActiveTab(value)} indicatorColor ='secondary'>
