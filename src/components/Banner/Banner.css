@@ -3,9 +3,9 @@
     background-color: #21005D !important;
     background: url('/ntbanner.jpg');
     background-size: cover;
-    height: 100vh;
     background-repeat: no-repeat;
-    margin-top: 20px;
+    /* mix-blend-mode: darken; */
+    /* margin-top: 20px; */
 }
 
 .banner img{

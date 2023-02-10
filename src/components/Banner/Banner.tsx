@@ -1,4 +1,4 @@
-import {Stack,Typography} from "@mui/material"
+import {Stack,Typography,useMediaQuery,useTheme} from "@mui/material"
 import React from 'react';
 import './Banner.css';
 import {motion} from 'framer-motion'
@@ -61,8 +61,14 @@ const bannerTextVariant = {
 }
 
 function Banner() {
+
+    
+  const mytheme = useTheme();
+  const lessThanTab = useMediaQuery(mytheme.breakpoints.down("md"));
+
+   let bannerHeight = lessThanTab?"60vh":"100vh";
   return (
-    <div className='banner h-50 bg-blue flex flex-col-reverse items-center justify-between md:flex-row md:h-100' >
+    <div className='banner bg-blue flex flex-col-reverse items-center justify-between md:flex-row ' style={{height:bannerHeight}}>
         <motion.div variants={bannerTextContentVariant} initial='initial' animate='final' className='bg-transparent mx-5 p-2 md:px-10'>
             <motion.h1 variants={bannerTitleVariant}  className="text-2xl text-white font-bold font-poppinsMedium md:text-5xl" color='white'>Global Computer Network</motion.h1>
             <motion.p variants={bannerTextVariant}  className="my-2 text-gray-100">We offer IT services and sales</motion.p>

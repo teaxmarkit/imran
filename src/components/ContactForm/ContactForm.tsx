@@ -44,7 +44,7 @@ const reducer = (state:ContactFormObject = initialState,action:Action)=>{
 function ContactForm() {
     const [formObjectState,dispatch] = useReducer(reducer,initialState);
     const [loading,setLoading] = React.useState<boolean>(false)
-    const [showEmailCodeModal,setShowEmailCodeModal] = React.useState<boolean>(true);
+    const [showEmailCodeModal,setShowEmailCodeModal] = React.useState<boolean>(false);
     const [verificationCode,setVerificationCode] = React.useState<number | null>(0);
     const [emailVerificationRespObj,setEmailVerificationRespObj] = React.useState<NonNullable<EmailVerifyResp>>({});
 
@@ -187,30 +187,7 @@ function ContactForm() {
 
             </Stack>
         </div>
-        <div className='pt-1 px-2 md:pt-4 md:px-2'>
-            <div className='flex flex-col justify-center items-start gap-5'>
-                <div className='flex flex-row items-center justify-center gap-2 md:flex-row'>
-                   <TextField onChange={(e)=> dispatch({type:'FULLNAME',payload:e.target.value})} size='small' type='text' fullWidth className='' variant='outlined' label='Full Name' required></TextField>
-                   <TextField onChange={(e)=> dispatch({type:'EMAIL',payload:e.target.value})} size='small' type='email' fullWidth variant='outlined' label='Email' required></TextField>
-                </div>
-                <TextField onChange={(e)=> dispatch({type:'SUBJECT',payload:e.target.value})} size='small'  fullWidth variant='outlined' label='Subject' required></TextField>
-                <TextField onChange={(e)=> dispatch({type:'MESSAGE',payload:e.target.value})} size='small' multiline minRows={3} fullWidth variant='outlined' label='Message' required></TextField>
-                
-                <LoadingButton
-                   onClick = {handleContactForm}
-                    loading = {loading}
-                    size='small'
-                    loadingPosition="start"
-                    disableElevation
-                    startIcon={<Send/>}
-                    variant="contained"
-                    >
-                    Submit
-                </LoadingButton>
-                {/* <button>Submit</button> */}
-              
-            </div>
-        </div>
+    
        
     </div>
    

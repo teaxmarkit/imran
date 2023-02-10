@@ -10,7 +10,7 @@ const SerciceComponent = ({title,description,imageUrl}:ServiceProps)=>{
    let aboutImgWidth = lessThanTab?"100vw":"50vw";
     return(
         <div data-aos='zoom-in' className='shadow-md p-5 rounded flex flex-col'>
-           <img alt='About Us Image' loading='lazy' className='rounded' style={{width:aboutImgWidth,height:"70vh"}} src={imageUrl}/>
+           <img alt='About Us Image' loading='lazy' className='rounded' style={{width:aboutImgWidth,height:"55vh"}} src={imageUrl}/>
           <Box>
             <Typography sx={{margin:"5px",fontWidth:"bold",color:"#18346b"}} variant='h5'>{title}</Typography>
             <Typography sx={{fontFamily:"Poppins-Light"}} variant='body1' className='my-3'>
