@@ -46,7 +46,7 @@ function NavMenuBar() {
                 <a style={{textDecoration:"none"}} className='hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300' href='/'>Home</a>
                 <a style={{textDecoration:"none"}} className='hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300' href='/#about-us'>About Us</a>
                 <a style={{textDecoration:"none"}} className='hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300' href='/#services'>Our Services</a>
-                <a style={{textDecoration:"none"}} className='hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300' href='/#team'>Team Members</a>
+                <a style={{textDecoration:"none"}} className='hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300' href='/#products'>Products</a>
                 <a style={{textDecoration:"none"}} className='hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300' href='/#contact'>Contact Us</a>
                 {/* <div className='hover:bg-customPrimary20 hover:cursor-pointer hover:text-gray-400'>Home</div> */}
             </motion.div>

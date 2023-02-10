@@ -64,10 +64,10 @@ function Banner() {
   return (
     <div className='banner h-50 bg-blue flex flex-col-reverse items-center justify-between md:flex-row md:h-100' >
         <motion.div variants={bannerTextContentVariant} initial='initial' animate='final' className='bg-transparent mx-5 p-2 md:px-10'>
-            <motion.h1 variants={bannerTitleVariant}  className="text-2xl text-white font-bold font-poppinsMedium md:text-5xl" color='white'>We offer digital services to schools</motion.h1>
-            <motion.p variants={bannerTextVariant}  className="my-2 text-gray-400">SchoolAll Company Here To Digitize Education</motion.p>
+            <motion.h1 variants={bannerTitleVariant}  className="text-2xl text-white font-bold font-poppinsMedium md:text-5xl" color='white'>Global Computer Network</motion.h1>
+            <motion.p variants={bannerTextVariant}  className="my-2 text-gray-100">We offer IT services and sales</motion.p>
         </motion.div>
-        <img  className="m-10 w-30"  src='/banner.png' alt="Banner Image" />
+        {/* <img  className="m-10 w-30"  src='/IT5.jpg' alt="Banner Image" /> */}
     </div>
   )
 }

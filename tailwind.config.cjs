@@ -10,8 +10,8 @@ module.exports = {
         poppinsLight:['Poppins-Light','serif'],
       },
       colors:{
-        customPrimary10:"#21005D",
-        customPrimary20:"#381E72",
+        customPrimary10:"#18346b",
+        customPrimary20:"#332D41",
         customPrimary60:"#9A82DB",
         customSecondary10:"#1D192B",
         customSecondary20:"#332D41",

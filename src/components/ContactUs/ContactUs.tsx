@@ -1,13 +1,13 @@
 import React from 'react';
 import {Typography} from "@mui/material";
-import {CustomMapComponent} from "../MapComponent/MapComponent"
+// import {CustomMapComponent} from "../MapComponent/MapComponent"
 import ContactForm from '../ContactForm/ContactForm';
 
 
 function ContactUs() {
   return (
     <div>
-        <CustomMapComponent/>
+        {/* <CustomMapComponent/> */}
         <div>
           <ContactForm/>
         </div>

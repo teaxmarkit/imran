@@ -8,7 +8,7 @@ function Footer() {
   return (
     <div className='p-5 shadow-lg bg-customPrimary10 bottom-0 grid grid-cols-2 md:grid-cols-3'>
         <div className='my-3 flex flex-col items-center justify-start'>
-            <Typography  sx={{fontFamily:"Inter",fontWeight:"bold",color:"white"}} variant='h5'>School<Typography sx={{fontFamily:"Inter",display:"inline",fontWeight:"bold"}} variant='h5' color='secondary'>All</Typography></Typography>
+            <Typography  sx={{fontFamily:"Inter",fontWeight:"bold",color:"white"}} variant='h5'>Global Computer Network</Typography>
             {/* <Typography variant='h4' className='text-gray-400 font-semibold font-poppinsMedium'>SchoolAll</Typography> */}
             <p className='text-gray-500'><span>&#169; Copywrite 2023</span></p>
         </div>
