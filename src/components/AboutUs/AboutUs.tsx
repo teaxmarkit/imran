@@ -24,8 +24,8 @@ let aboutImgWidth = lessThanTab?"100vw":"50vw";
      <Typography className='text-center pb-2' fontFamily='Inter' fontWeight='bold' color='primary.main' variant={lessThanTab ?'h4':"h3"}>About Us</Typography>
    {/* <h4 className='text-center mb-5 text-customPrimary10 text-3xl font-semibold font-inter md:text-5xl md:mb-8 opacity-4'>About Us</h4> */}
    {/* <Divider></Divider> */}
-    <div className='flex w-100 flex-col mt-2 gap-5 justify-center md:flex-row'>
-        <img alt='About Us Image' className='rounded' style={{width:aboutImgWidth}} src='/NT1.jpg'/>
+    <div className='flex w-100 flex-col mt-2 gap-5 justify-center lg:flex-row'>
+        <img alt='About Us Image' className='rounded' style={{width:aboutImgWidth}} src='/logo.jpg'/>
         <div>
         {/* <h4 className='text-center text-customPrimary20 text-2xl font-inter md:text-4xl'>SchoolAll Company Here To Digitize Education</h4> */}
             <div className='p-4'>

@@ -190,13 +190,22 @@ function ContactForm() {
                 
             </motion.div>
         </Modal> */}
-        <div className='pt-1 px-2 md:pt-4'>
-            <Stack direction ="column">
+        <div className='pt-1 px-2 grid grid-cols-1 gap-5 md:pt-4 md:grid-cols-2'>
+          
                <div className='flex flex-row items-center justify-start gap-3 my-2'>
                    <PlaceOutlined className='text-customPrimary20' fontSize='large'></PlaceOutlined>
                    <div>
                         <Typography className='font-semibold font-inter'>Location</Typography>
                         <Typography className='text-md text-gray-500'>364 Baibureh Road,Freetown, Sierra Leone</Typography>
+                        {/* <Typography className='text-md text-gray-500'>1 Santos Lane,Port Loko, Sierra Leone</Typography> */}
+                   </div>
+               </div>
+               <div className='flex flex-row items-center justify-start gap-3 my-2'>
+                   <PlaceOutlined className='text-customPrimary20' fontSize='large'></PlaceOutlined>
+                   <div>
+                        <Typography className='font-semibold font-inter'>Location</Typography>
+                        {/* <Typography className='text-md text-gray-500'>364 Baibureh Road,Freetown, Sierra Leone</Typography> */}
+                        <Typography className='text-md text-gray-500'>1 Santos Lane,Port Loko, Sierra Leone</Typography>
                    </div>
                </div>
                <div className='flex flex-row items-center justify-start gap-3 my-2'>
@@ -210,19 +219,24 @@ function ContactForm() {
                    <SmartphoneOutlined className='text-customPrimary20' fontSize='large'></SmartphoneOutlined>
                    <div>
                         <Typography>Call Phone One</Typography>
-                        <a href='tel:+23276869500'> <Typography className='text-md text-gray-500'>+23276 869500</Typography></a>
+                        <a href='tel:+23272414477'> <Typography className='text-md text-gray-500'>+23272 414477</Typography></a>
                    </div>
                </div>
                <div className='flex flex-row items-center justify-start gap-3 my-2'>
                    <SmartphoneOutlined className='text-customPrimary20' fontSize='large'></SmartphoneOutlined>
                    <div>
                         <Typography>Call Phone Two</Typography>
-                        <a href='tel:+23230772478'> <Typography className='text-md text-gray-500'>+23230 772478</Typography></a> 
+                        <a href='tel:+23278514424'> <Typography className='text-md text-gray-500'>+23278514424</Typography></a> 
                    </div>
                </div>
-              
-
-            </Stack>
+               <div className='flex flex-row items-center justify-start gap-3 my-2'>
+                   <SmartphoneOutlined className='text-customPrimary20' fontSize='large'></SmartphoneOutlined>
+                   <div>
+                        <Typography>Call Phone Three</Typography>
+                        <a href='tel:+23278610610'> <Typography className='text-md text-gray-500'>+23278610610</Typography></a> 
+                   </div>
+               </div>
+            
         </div>
         {/* <div className='pt-1 px-2 md:pt-4 md:px-2'>
             <div className='flex flex-col justify-center items-start gap-5'>
