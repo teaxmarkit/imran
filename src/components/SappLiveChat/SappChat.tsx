@@ -22,7 +22,7 @@ function SappChat() {
                     <Typography variant='body2'>
                        Send a message and chat with one of the members of Global Computer Network
                     </Typography>
-                     <form onSubmit={handleSappForm} className='gap-2 px-4 flex flex-row rounded text-white md:px-2'>
+                     <form onSubmit={handleSappForm} className='gap-2 px-4 flex justify-center flex-row rounded text-white md:px-2'>
                         <TextField  className='text-white' type="text" value={sappMsg} label='Chat On WhatsApp' multiline size='small' color='success' onChange={e => setSappMsg(e.target.value)} sx={{height:"4vh",marginRight:'3px',color:"white"}}>
                         </TextField>
                         <ReactWhatsapp element='webview' number='+23278514424'  message={sappMsg}> <IconButton ><Send color='success'></Send></IconButton></ReactWhatsapp>
