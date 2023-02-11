@@ -22,10 +22,12 @@ const SerciceComponent = ({title,description,imageUrl}:ServiceProps)=>{
 }
 function Services() {
   const SERVICES:Array<ServiceProps> = [
+    
     {id:1,title:"Desktop Publishing",imageUrl:"/online_payment2.jpg",description:`
     Are you in need of a professional-looking brochure, presentation, or document? Look no further than Global Computer Network's Desktop Publishing services. Our team of experienced designers and layout specialists can help you create visually appealing and impactful materials that effectively communicate your message.
     Whether you're a business looking to promote your products and services, or an individual in need of a well-designed resume or portfolio, we can help. Our services include design, layout, and printing, and we work with you every step of the way to ensure that you're completely satisfied with the final product.
     We offer competitive pricing, fast turnaround times, and a commitment to quality that you can rely on. Contact us today to find out how we can help you create the perfect document for your needs.`},
+
 
     {id:2,title:"Mobile Computer School (MCS)",imageUrl:"/software_development.jpg",description:`Are you looking to stay ahead in the ever-evolving world of technology? Global Computer Network's Mobile Computer School can help. Our team of expert instructors offers a range of courses designed to equip you with the latest skills and techniques in computer software, hardware, and mobile devices.
     We use practical, hands-on methods to help you develop real-world skills that you can use immediately. Our courses are affordable and taught in a supportive and friendly environment, ensuring that you receive the best possible education.
@@ -48,7 +50,6 @@ function Services() {
     We understand how important your device is to you, which is why we offer fast, reliable, and affordable services. Our technicians use only the highest-quality parts and equipment to ensure that your device is repaired to the highest standards.
     Our door-to-door services are designed to make the repair process as convenient as possible for you. Our technicians will come to your home or office to diagnose and repair your device, so you never have to leave the comfort of your own space.
     For all your computer repair needs, look no further than Global Computer Network. Contact us today to find out how we can help.`},
-
 
 
     {id:6,title:"Trained And Qualified Computer Tutors For Hiring",imageUrl:"/employee_discussion.jpg",description:`Are you struggling with a particular aspect of your computer skills? Global Computer Network offers Computer Tutoring Services that can help. Our team of experienced and qualified tutors can provide personalized and one-on-one assistance with a wide range of computer-related topics.

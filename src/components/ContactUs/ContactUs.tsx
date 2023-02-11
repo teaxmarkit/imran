@@ -1,8 +1,8 @@
 import React from 'react';
 import {Typography} from "@mui/material";
 // import {CustomMapComponent} from "../MapComponent/MapComponent"
-import ContactForm from '../ContactForm/ContactForm';
 
+import ContactForm from '../ContactForm/ContactForm';
 
 function ContactUs() {
   return (

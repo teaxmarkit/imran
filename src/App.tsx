@@ -16,6 +16,7 @@ import Services from './components/ServicesOffered/Services';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import { TypographyOptions } from '@mui/material/styles/createTypography';
+import ImageGallery from './components/Gallery/ImageGallery';
 // import SappChat from './components/SappLiveChat/SappChat';
 
 
@@ -54,7 +55,6 @@ const AppContainer =()=>{
              <AboutUs/>
           </section>
       
-
           <section data-aos='fade-in' id='services' className='my-8'>
           <Typography className='text-center my-3 py-2' fontFamily='Inter' fontWeight='bold' color='primary.main' variant={lessThanTab ?'h4':"h3"}>Our Services</Typography>
           {/* <h4 className='text-center my-6 text-customPrimary10 text-3xl font-semibold font-inter md:text-5xl opacity-4'>Our Services</h4> */}
@@ -63,13 +63,13 @@ const AppContainer =()=>{
           </section>
 
 
-          <section data-aos='fade-in' id='products' className='my-4'>
+          <section data-aos='fade-out' id='products' className='my-4'>
           <Typography className='text-center my-6 py-2' fontFamily='Inter' fontWeight='bold' color='primary.main' variant={lessThanTab ?'h4':"h3"}>Products</Typography>
           {/* <h4 className='text-center text-customPrimary10 text-3xl font-semibold font-inter mt-10 mb-6 md:text-5xl opacity-4'>Meet The Team</h4> */}
           <Divider></Divider>
-            <MemberComponent/>
+            {/* <MemberComponent/> */}
+            <ImageGallery/>
           </section>
-
          
           <section data-aos='zoom-in' id='contact-us' className='my-8'>
           <Typography className='text-center my-3 py-2' fontFamily='Inter' fontWeight='bold' color='primary.main' variant={lessThanTab ?'h4':"h3"}>Contact Us</Typography>

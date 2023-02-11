@@ -66,7 +66,7 @@ function Banner() {
   const mytheme = useTheme();
   const lessThanTab = useMediaQuery(mytheme.breakpoints.down("md"));
 
-   let bannerHeight = lessThanTab?"60vh":"100vh";
+  let bannerHeight = lessThanTab?"60vh":"100vh";
   return (
     <div className='banner bg-blue flex flex-col-reverse items-center justify-between md:flex-row ' style={{height:bannerHeight}}>
         <motion.div variants={bannerTextContentVariant} initial='initial' animate='final' className='bg-transparent mx-5 p-2 md:px-10'>
