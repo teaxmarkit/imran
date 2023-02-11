@@ -17,7 +17,7 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 import { TypographyOptions } from '@mui/material/styles/createTypography';
 import ImageGallery from './components/Gallery/ImageGallery';
-// import SappChat from './components/SappLiveChat/SappChat';
+import SappChat from './components/SappLiveChat/SappChat';
 
 
 
@@ -48,7 +48,7 @@ const AppContainer =()=>{
   return (<>
 
         <Header></Header>
-        {/* <SappChat/> */}
+        <SappChat/>
         <Banner/>
         <main className='py-10 px-1 md:px-3 md:mx-8'>
           <section data-aos='zoom-in' id='about-us' className='my-1'>
@@ -64,7 +64,7 @@ const AppContainer =()=>{
 
 
           <section data-aos='fade-out' id='products' className='my-4'>
-          <Typography className='text-center my-6 py-2' fontFamily='Inter' fontWeight='bold' color='primary.main' variant={lessThanTab ?'h4':"h3"}>Products</Typography>
+          <Typography className='text-center my-6 py-2' fontFamily='Inter' fontWeight='bold' color='primary.main' variant={lessThanTab ?'h4':"h3"}>Products And Gallery</Typography>
           {/* <h4 className='text-center text-customPrimary10 text-3xl font-semibold font-inter mt-10 mb-6 md:text-5xl opacity-4'>Meet The Team</h4> */}
           <Divider></Divider>
             {/* <MemberComponent/> */}

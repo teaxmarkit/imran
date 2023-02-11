@@ -16,8 +16,8 @@ function Footer() {
             <a style={{textDecoration:"none"}} className='hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300' href='/'>Home</a>
             <a style={{textDecoration:"none"}} className='hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300' href='/#about-us'>About Us</a>
             <a style={{textDecoration:"none"}} className='hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300' href='/#services'>Our Services</a>
-            <a style={{textDecoration:"none"}} className='hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300' href='/#team'>Team Members</a>
-            <a style={{textDecoration:"none"}} className='hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300' href='/#contact'>Contact Us</a>
+            <a style={{textDecoration:"none"}} className='hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300' href='/#products'>Gallery</a>
+            <a style={{textDecoration:"none"}} className='hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300' href='/#contact-us'>Contact Us</a>
         </div>
         <div className='d-flex flex-col items-start justify-start my-2 text-gray-400'>
             <div className='flex flex-row justify-start text-gray-400 items-start py-3'>
@@ -30,12 +30,12 @@ function Footer() {
                 <IconButton aria-label="delete">
                     <Instagram className='text-gray-400' />
                 </IconButton>
-                <IconButton size='medium' aria-label="delete">
+                {/* <IconButton size='medium' aria-label="delete">
                     <GitHub className='text-gray-400' />
                 </IconButton>
                 <IconButton aria-label="delete">
                     <LinkedIn className='text-gray-400' />
-                </IconButton>
+                </IconButton> */}
             </div>
             
         </div>

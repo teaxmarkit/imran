@@ -1,11 +1,6 @@
 .banner{
-    width:100% !important;
-    background-color: #21005D !important;
-    background: url('/ntbanner.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* mix-blend-mode: darken; */
-    /* margin-top: 20px; */
+    width:100vw !important;
+    background-color: #18346b !important;
 }
 
 .banner img{

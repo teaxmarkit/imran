@@ -152,7 +152,7 @@ function ContactForm() {
     }
 
   return (
-    <div className='flex my-4 flex-col p-2 justify-center gap-10 shadow-md pb-10 md:flex-row md:gap-20'>
+    <div className='flex my-4 flex-col p-2 justify-center gap-10  pb-10 md:flex-row md:gap-20'>
           {/* <Modal open={showEmailCodeModal} onClose={()=> setShowEmailCodeModal(false)}>
             <motion.div className='flex  flex-col justify-center items-center' style={{height:"100vh"}}>
                
@@ -196,28 +196,35 @@ function ContactForm() {
                    <PlaceOutlined className='text-customPrimary20' fontSize='large'></PlaceOutlined>
                    <div>
                         <Typography className='font-semibold font-inter'>Location</Typography>
-                        <Typography className='text-md text-gray-500'>12 Circular Road</Typography>
+                        <Typography className='text-md text-gray-500'>364 Baibureh Road,Freetown, Sierra Leone</Typography>
                    </div>
                </div>
                <div className='flex flex-row items-center justify-start gap-3 my-2'>
                    <MailOutline className='text-customPrimary20' fontSize='large'></MailOutline>
                    <div>
                         <Typography>Email</Typography>
-                        <Typography  className='text-md text-gray-500'>email@gmail.com</Typography>
+                        <a href='mailto:thalacyjoy@yahoo.com'><Typography  className='text-md text-gray-500'>thalacyjoy@yahoo.com</Typography></a>
                    </div>
                </div>
                <div className='flex flex-row items-center justify-start gap-3 my-2'>
                    <SmartphoneOutlined className='text-customPrimary20' fontSize='large'></SmartphoneOutlined>
                    <div>
-                        <Typography>Call</Typography>
-                        <Typography className='text-md text-gray-500'>+23288 722317</Typography>
+                        <Typography>Call Phone One</Typography>
+                        <a href='tel:+23276869500'> <Typography className='text-md text-gray-500'>+23276 869500</Typography></a>
+                   </div>
+               </div>
+               <div className='flex flex-row items-center justify-start gap-3 my-2'>
+                   <SmartphoneOutlined className='text-customPrimary20' fontSize='large'></SmartphoneOutlined>
+                   <div>
+                        <Typography>Call Phone Two</Typography>
+                        <a href='tel:+23230772478'> <Typography className='text-md text-gray-500'>+23230 772478</Typography></a> 
                    </div>
                </div>
               
 
             </Stack>
         </div>
-        <div className='pt-1 px-2 md:pt-4 md:px-2'>
+        {/* <div className='pt-1 px-2 md:pt-4 md:px-2'>
             <div className='flex flex-col justify-center items-start gap-5'>
                 <div className='flex flex-row items-center justify-center gap-2 md:flex-row'>
                    <TextField onChange={(e)=> dispatch({type:'FULLNAME',payload:e.target.value})} size='small' type='text' fullWidth className='' variant='outlined' label='Full Name' required></TextField>
@@ -237,10 +244,10 @@ function ContactForm() {
                     >
                     Submit
                 </LoadingButton>
-                {/* <button>Submit</button> */}
+        
               
             </div>
-        </div>
+        </div> */}
        
     </div>
    

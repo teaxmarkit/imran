@@ -22,7 +22,7 @@ function Header() {
                     <Tab color='primary' sx={{color:"#18346b"}}  href='#' label='Home'></Tab>
                     <Tab color='primary' sx={{color:"#18346b"}} href='#about-us' label='About Us'></Tab>
                     <Tab color='primary' sx={{color:"#18346b"}}  href='#services' label='Services'></Tab>
-                    <Tab color='primary' sx={{color:"#18346b"}} href='#products' label='Products'></Tab>
+                    <Tab color='primary' sx={{color:"#18346b"}} href='#products' label='Products And Gallery'></Tab>
                     <Tab color='primary' sx={{color:"#18346b"}}  href='#contact-us' label='Contact Us'></Tab>
                 </Tabs>
             }

@@ -1,4 +1,4 @@
-import {Stack,Typography,useMediaQuery,useTheme} from "@mui/material"
+import {Stack,Typography} from "@mui/material"
 import React from 'react';
 import './Banner.css';
 import {motion} from 'framer-motion'
@@ -61,19 +61,13 @@ const bannerTextVariant = {
 }
 
 function Banner() {
-
-    
-  const mytheme = useTheme();
-  const lessThanTab = useMediaQuery(mytheme.breakpoints.down("md"));
-
-  let bannerHeight = lessThanTab?"60vh":"100vh";
   return (
-    <div className='banner bg-blue flex flex-col-reverse items-center justify-between md:flex-row ' style={{height:bannerHeight}}>
+    <div className='banner h-50 pt-10 bg-blue flex flex-col-reverse items-center justify-between md:flex-row md:h-100' >
         <motion.div variants={bannerTextContentVariant} initial='initial' animate='final' className='bg-transparent mx-5 p-2 md:px-10'>
-            <motion.h1 variants={bannerTitleVariant}  className="text-2xl text-white font-bold font-poppinsMedium md:text-5xl" color='white'>Global Computer Network</motion.h1>
-            <motion.p variants={bannerTextVariant}  className="my-2 text-gray-100">We offer IT services and sales</motion.p>
+            <motion.h1 variants={bannerTitleVariant}  className="text-2xl text-white font-bold font-poppinsMedium md:text-5xl" color='white'>Global Computer Network (GCN)</motion.h1>
+            <motion.p variants={bannerTextVariant}  className="my-2 text-gray-400">Sierra Leone Information Technology Company Offering Learning, Reparing and Maintenance Services For Hardware And Software.</motion.p>
         </motion.div>
-        {/* <img  className="m-10 w-30"  src='/IT5.jpg' alt="Banner Image" /> */}
+        <img  className="m-10 w-30"  src='/itbanner.png' alt="Banner Image" />
     </div>
   )
 }
