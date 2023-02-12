@@ -212,7 +212,7 @@ function ContactForm() {
                    <MailOutline className='text-customPrimary20' fontSize='large'></MailOutline>
                    <div>
                         <Typography>Email</Typography>
-                        <a href='mailto:thalacyjoy@yahoo.com'><Typography  className='text-md text-gray-500'>thalacyjoy@yahoo.com</Typography></a>
+                        <a href='mailto:bubacarrsumudu2020@yahoo.com'><Typography  className='text-md text-gray-500'>bubacarrsumudu2020@yahoo.com</Typography></a>
                    </div>
                </div>
                <div className='flex flex-row items-center justify-start gap-3 my-2'>

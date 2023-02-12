@@ -20,7 +20,6 @@ import ImageGallery from './components/Gallery/ImageGallery';
 import SappChat from './components/SappLiveChat/SappChat';
 
 
-
 const initialState = {themeMode:'light'} satisfies Theme;
 
 const reducer = (state:Theme = initialState,action:Action)=>{
@@ -34,8 +33,6 @@ const reducer = (state:Theme = initialState,action:Action)=>{
     }
 }
 
-
-
 const AppContainer =()=>{
 
   const mytheme = useTheme();
@@ -46,11 +43,11 @@ const AppContainer =()=>{
   },[])
   
   return (<>
-
         <Header></Header>
         <SappChat/>
         <Banner/>
         <main className='py-10 px-1 md:px-3 md:mx-8'>
+          
           <section data-aos='zoom-in' id='about-us' className='my-1'>
              <AboutUs/>
           </section>
@@ -61,7 +58,6 @@ const AppContainer =()=>{
           <Divider></Divider>
              <Services/>
           </section>
-
 
           <section data-aos='fade-out' id='products' className='my-4'>
           <Typography className='text-center my-6 py-2' fontFamily='Inter' fontWeight='bold' color='primary.main' variant={lessThanTab ?'h4':"h3"}>Products And Gallery</Typography>
@@ -85,6 +81,7 @@ const AppContainer =()=>{
   </>)
 }
 
+
 function App() {
   const [state,dispatch] = useReducer(reducer,initialState);
   const [members,setMember] = useState<any[]>([1,2,3,4])
@@ -101,13 +98,10 @@ function App() {
         },
         typography:{
           fontFamily:["Poppins-Medium","Poppins-Light","Inter"].join(","),
-          
-          
       } satisfies TypographyOptions,
       }),
     [prefersDarkMode,state?.themeMode],
   );
-
 
 
   return (
@@ -115,8 +109,6 @@ function App() {
         <CssBaseline/>
         <AppContainer/>
     </ThemeProvider>
-
-    
   )
 }
 
