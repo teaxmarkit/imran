@@ -6,7 +6,7 @@ import './Footer.css';
 
 function Footer() {
   return (
-    <div className='p-10 shadow-lg w-100 bg-customPrimary10 bottom-0 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4'>
+    <div className='p-6 shadow-lg w-100 bg-customPrimary10 bottom-0 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4'>
         <div className='m-4 flex flex-col items-start justify-start'>
             <Typography  sx={{fontFamily:"Inter",fontWeight:"bold",color:"white"}} variant='h5'>Global Computer Network</Typography>
             {/* <Typography variant='h4' className='text-gray-400 font-semibold font-poppinsMedium'>SchoolAll</Typography> */}
