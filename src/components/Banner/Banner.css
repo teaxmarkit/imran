@@ -1,6 +1,7 @@
 .banner{
     width:100vw !important;
-    background-color: #18346b !important;
+    background-color: #421051 !important;
+    overflow: hidden;
 }
 
 .banner img{

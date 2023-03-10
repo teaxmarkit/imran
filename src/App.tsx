@@ -12,7 +12,7 @@ import {Typography,Divider,useTheme,useMediaQuery} from "@mui/material"
 import ContactUs from './components/ContactUs/ContactUs';
 import Footer from './components/Footer/Footer';
 import AboutUs from './components/AboutUs/AboutUs';
-import Services from './components/ServicesOffered/Services';
+import Products from './components/Products/Products';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import { TypographyOptions } from '@mui/material/styles/createTypography';
@@ -52,15 +52,15 @@ const AppContainer =()=>{
              <AboutUs/>
           </section>
       
-          <section data-aos='fade-in' id='services' className='my-8'>
-          <Typography className='text-center my-3 py-2' fontFamily='Inter' fontWeight='bold' color='primary.main' variant={lessThanTab ?'h4':"h3"}>Our Services</Typography>
+          <section data-aos='fade-in' id='products' className='my-8'>
+          <Typography className='text-center my-3 py-2' fontFamily='Inter' fontWeight='bold' color='primary.main' variant={lessThanTab ?'h4':"h3"}>Products</Typography>
           {/* <h4 className='text-center my-6 text-customPrimary10 text-3xl font-semibold font-inter md:text-5xl opacity-4'>Our Services</h4> */}
           <Divider></Divider>
-             <Services/>
+             <Products/>
           </section>
 
           <section data-aos='fade-out' id='products' className='my-4'>
-          <Typography className='text-center my-6 py-2' fontFamily='Inter' fontWeight='bold' color='primary.main' variant={lessThanTab ?'h4':"h3"}>Products And Gallery</Typography>
+          <Typography className='text-center my-6 py-2' fontFamily='Inter' fontWeight='bold' color='primary.main' variant={lessThanTab ?'h4':"h3"}>Portfolio</Typography>
           {/* <h4 className='text-center text-customPrimary10 text-3xl font-semibold font-inter mt-10 mb-6 md:text-5xl opacity-4'>Meet The Team</h4> */}
           <Divider></Divider>
             {/* <MemberComponent/> */}
@@ -92,7 +92,7 @@ function App() {
         palette: {
           mode: prefersDarkMode || state.themeMode === 'dark' ? 'dark' : 'light',
           primary:{
-            main: prefersDarkMode || state.themeMode === 'dark'?"#fff":"#18346b",
+            main: prefersDarkMode || state.themeMode === 'dark'?"#fff":"#421051",
             light:"#381E72",
           }, 
         },
