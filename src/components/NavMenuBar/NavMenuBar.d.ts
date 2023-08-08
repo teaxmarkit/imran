@@ -1,3 +1,3 @@
-export interface BarProps{
-    children:JSX.Element
+export interface BarProps {
+   children: JSX.Element;
 }

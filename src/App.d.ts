@@ -1,8 +1,8 @@
 export interface Theme {
-    themeMode?:string
+   themeMode?: string;
 }
 
-export interface Action{
-    type?:string,
-    payload?:string
+export interface Action {
+   type?: string;
+   payload?: string;
 }
