@@ -83,7 +83,7 @@ function Banner() {
          <img
             className="m-6 w-30"
             style={{ width: aboutImgWidth }}
-            src="/Skincare-amico.png"
+            src="/hospital/banner.png"
             alt="Banner Image"
          />
       </div>

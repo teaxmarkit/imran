@@ -32,7 +32,7 @@ function CourseComponent({ title, description, imageUrl }: CourseProps) {
                {title}
             </Typography>
 
-            <p className="font-poppinsLight text-center text-md text-justify">
+            <p className="font-poppinsLight text-md text-justify">
                {description}
             </p>
          </CardContent>
@@ -44,31 +44,31 @@ function CoursesSection() {
    const Courses: CourseProps[] = [
       {
          id: 1,
-         imageUrl: "/constellation-bg.svg",
+         imageUrl: "/hospital/public.gif",
          title: "Public Health 1 & 2",
          description: `Step into the realm of community well-being and disease prevention. Our Public Health Certificate equips you with the knowledge to assess health challenges, design effective interventions, and advocate for healthier societies. Dive into epidemiology, health policies, and health promotion strategies, positioning yourself as a force for positive change.`,
       },
       {
          id: 2,
-         imageUrl: "/constellation-bg.svg",
+         imageUrl: "/hospital/reproductive.gif",
          title: "Reproductive Health",
          description: `Empower yourself with the ability to promote informed reproductive choices. The Reproductive Health Diploma delves into topics of family planning, sexual education, and maternal health. Become a champion of reproductive rights, contributing to the advancement of comprehensive healthcare for all.`,
       },
       {
          id: 3,
-         imageUrl: "/constellation-bg.svg",
+         imageUrl: "/hospital/clinic.gif",
          title: "Clinical Health",
          description: `Embark on a transformative journey into the heart of patient care. Our Clinical Healthcare Diploma not only imparts medical knowledge but also nurtures the virtues of compassion and empathy. From medical ethics to diagnostic skills, this program prepares you to excel in the dynamic world of healthcare.`,
       },
       {
          id: 4,
-         imageUrl: "/constellation-bg.svg",
+         imageUrl: "/hospital/computer.gif",
          title: "Basic Computer Skills",
          description: `In an era defined by digital innovation, our Basic Computer Skills Certificate equips you with the essential tools for success. Gain fluency in software usage, data management, and effective internet navigation. This course is designed to bridge the digital divide and empower you to harness technology for personal and professional growth.`,
       },
       {
          id: 5,
-         imageUrl: "/constellation-bg.svg",
+         imageUrl: "/hospital/driving.gif",
          title: "Driving School",
          description: `Open new horizons of independence with our comprehensive Driving School Certificate. Under the guidance of seasoned instructors, master the art of safe and responsible driving. Whether you're embarking on your first driving experience or seeking to enhance your skills, this course ensures you hit the road with confidence`,
       },

@@ -40,7 +40,7 @@ function AboutUs() {
                alt="About Us Image"
                className="rounded"
                style={{ width: aboutImgWidth }}
-               src="/Skincare-rafiki.png"
+               src="/hospital/about.png"
             />
             <div>
                {/* <h4 className='text-center text-customPrimary20 text-2xl font-inter md:text-4xl'>SchoolAll Company Here To Digitize Education</h4> */}
