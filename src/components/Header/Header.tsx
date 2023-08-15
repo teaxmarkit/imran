@@ -22,7 +22,7 @@ function Header() {
             className="flex flex-row justify-between"
             sx={{ justifyContent: "space-between" }}
          >
-            <Typography variant='h5' fontWeight="blod">AL-IMRAN</Typography>
+            <Typography variant='h6' fontWeight="blod">AL-IMRAN</Typography>
             {!lessThanTab && (
                <Tabs
                   className="md:hidden"

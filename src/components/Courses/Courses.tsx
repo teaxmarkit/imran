@@ -32,7 +32,7 @@ function CourseComponent({ title, description, imageUrl }: CourseProps) {
                {title}
             </Typography>
 
-            <p className="font-poppinsLight text-md text-justify">
+            <p className="font-poppinsLight text-md">
                {description}
             </p>
          </CardContent>
