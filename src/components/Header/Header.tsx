@@ -22,12 +22,7 @@ function Header() {
             className="flex flex-row justify-between"
             sx={{ justifyContent: "space-between" }}
          >
-            <img
-               src="/logo.jpg"
-               alt="Logo"
-               className="mx-4 my-2"
-               style={{ width: imgWidth, mixBlendMode: "darken", zIndex: 10 }}
-            />
+            <Typography variant='h5' fontWeight="blod">AL-IMRAN</Typography>
             {!lessThanTab && (
                <Tabs
                   className="md:hidden"

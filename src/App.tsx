@@ -58,7 +58,7 @@ const AppContainer = () => {
                   color="primary.main"
                   variant={lessThanTab ? "h4" : "h3"}
                >
-                  Courses
+                  Courses Offered
                </Typography>
                {/* <h4 className='text-center my-6 text-customPrimary10 text-3xl font-semibold font-inter md:text-5xl opacity-4'>Our Services</h4> */}
                <Divider></Divider>

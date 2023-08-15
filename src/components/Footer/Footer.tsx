@@ -18,7 +18,7 @@ function Footer() {
                sx={{ fontFamily: "Inter", fontWeight: "bold", color: "white" }}
                variant="h5"
             >
-               Global Computer Network
+               AL-IMRAN TRAINING INSTITUTION
             </Typography>
             {/* <Typography variant='h4' className='text-gray-400 font-semibold font-poppinsMedium'>SchoolAll</Typography> */}
             <p className="text-gray-500">
@@ -44,14 +44,14 @@ function Footer() {
             <a
                style={{ textDecoration: "none" }}
                className="hover:bg-customPrimary10 px-10 mx-2 py-2 rounded hover:text-gray-300"
-               href="/#services"
+               href="/#courses"
             >
-               Our Services
+               Our Courses
             </a>
             <a
                style={{ textDecoration: "none" }}
                className="hover:bg-customPrimary10 px-10 mx-2 py-2 rounded hover:text-gray-300"
-               href="/#products"
+               href="/#portfolio"
             >
                Gallery
             </a>
@@ -66,22 +66,22 @@ function Footer() {
          <div className="m-4">
             <h5 className="text-white">SERVICES</h5>
             <li className="text-gray-200 hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300">
-               Computer Hardware And Software Trainning
+                Al-IMRAN
             </li>
             <li className="text-gray-200 hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300">
-               Desktop Publishing
+               Public Health 1 & 2
             </li>
             <li className="text-gray-200 hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300">
-               Tutor Hiring
+               Reproductive Health
             </li>
             <li className="text-gray-200 hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300">
-               Computer Door To Door Repair
+               Clinic Health
             </li>
             <li className="text-gray-200 hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300">
-               Mobile Phone Unlocking And Repair
+               Driving School
             </li>
             <li className="text-gray-200 hover:bg-customPrimary10 px-10 py-2 rounded hover:text-gray-300">
-               Mobile Computer School
+               Computer Basic
             </li>
          </div>
          <div className="flex m-4 text-gray-400">

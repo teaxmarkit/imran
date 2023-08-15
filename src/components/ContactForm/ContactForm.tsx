@@ -204,26 +204,12 @@ function ContactForm() {
                      Location
                   </Typography>
                   <Typography className="text-md text-gray-500">
-                     364 Baibureh Road,Freetown, Sierra Leone
+                     20 Hill Station
                   </Typography>
                   {/* <Typography className='text-md text-gray-500'>1 Santos Lane,Port Loko, Sierra Leone</Typography> */}
                </div>
             </div>
-            <div className="flex flex-row items-center justify-start gap-3 my-2">
-               <PlaceOutlined
-                  className="text-customPrimary20"
-                  fontSize="large"
-               ></PlaceOutlined>
-               <div>
-                  <Typography className="font-semibold font-inter">
-                     Location
-                  </Typography>
-                  {/* <Typography className='text-md text-gray-500'>364 Baibureh Road,Freetown, Sierra Leone</Typography> */}
-                  <Typography className="text-md text-gray-500">
-                     1 Santos Lane,Port Loko, Sierra Leone
-                  </Typography>
-               </div>
-            </div>
+         
             <div className="flex flex-row items-center justify-start gap-3 my-2">
                <MailOutline
                   className="text-customPrimary20"
@@ -233,7 +219,7 @@ function ContactForm() {
                   <Typography>Email</Typography>
                   <a href="mailto:bubacarrsumudu2020@yahoo.com">
                      <Typography className="text-md text-gray-500">
-                        bubacarrsumudu2020@yahoo.com
+                        alimran@gmail.com@yahoo.com
                      </Typography>
                   </a>
                </div>
@@ -248,7 +234,7 @@ function ContactForm() {
                   <a href="tel:+23272414477">
                      {" "}
                      <Typography className="text-md text-gray-500">
-                        +23272 414477
+                        +23272 112233
                      </Typography>
                   </a>
                </div>

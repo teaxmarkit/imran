@@ -70,7 +70,7 @@ function Banner() {
                className="text-2xl text-white font-bold font-poppinsMedium md:text-5xl"
                color="white"
             >
-               AL IMRAN CLINIC AND NURSING TRAING INSTITUTON
+               AL IMRAN CLINIC AND NURSING TRAINING INSTITUTON
             </motion.h1>
             <motion.p
                variants={bannerTextVariant}
